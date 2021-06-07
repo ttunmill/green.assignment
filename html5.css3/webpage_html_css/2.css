@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* { margin: 0; padding: 0; }
+body { font-family: sans-serif; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0; }
+
+/* Header */
+#main_header {
+    text-align: center; 
+    background:linear-gradient(to bottom, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    line-height: 52px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+#main_header > label {
+    display: block;
+    height: 1px;
+    position: absolute;
+}
+
+#main_header > label.right {
+    width: 52px;
+    right: 0px;
+    top: 10px;
+}
+
+
+/* Toggle */
+#main_header > .right {
+    background: url("./img/menu.png") -10px -10px;
+    width: 52px; height: 52px;
+}
+
+#toggle { display: none; }
+#toggle + #wrap > #toggle_gnb_wrap { display: none; }
+#toggle:checked + #wrap > #toggle_gnb_wrap { display: block;}
+
+#toggle_gnb_wrap {
+    background: white;
+    padding: 5px;
+}
+
+#toggle_gnb {
+    background: coral;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#toggle_gnb > ul { overflow: hidden; }
+#toggle_gnb > ul > li {
+    width: 25%; float: left;
+    text-align: center;
+}
+
+/* Banner */
+img { width: inherit; max-width: 100%; height: auto;}
+
+img { width: 100%; height: 100% };
+
+/* Footer */
+#main_footer {}
+/* 여기 부분 이상함 */
+#main_footer > #footer_gnb {
+    padding: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+}
+
+/* background */
+
+html, body {
+    background:burlywood;
+}
