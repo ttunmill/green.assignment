@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    location.href = "url.html?name=javascript&no=123&porp=test&date=20211211";
+
+    //1. 해당 주소를 location 객체를 이용해 구하시오
+    var url = location.href;
+
+    //2. 해당 주소에서 string 객체를 이용해 쿼리스트링만 분리하시오
+    var noQ = url.substr(url.indexOf("?")+1, url.length);
+    console.log(noQ);
+    // substr("?")+1, url.length
+    //3. 각각의 쿼리스트링의 변수와 값을 콘솔에 출력하시오.(변수와 값을 굳이 분리하지 않아도 됨)
+    
+    var arr = noQ.split("&");
+    for (i in arr) {
+        console.log(arr[i]);
+    }
+
+    //4. 쿼리스트링에서 변수는 변수끼리 배열에 담고 값은 값끼리 배열에 담으시오
+
+    var variable = []; // 값
+    var value = [];  // 변수
+
+
+    for (var i = 0; i < arr.length; i++) {
+        var getValue = arr[i].substr(arr[i].indexOf("=")+1, arr[i].length);
+        var getVariable = arr[i].substr(0, arr[i].indexOf("="));
+
+        variable.push(getVariable);
+        value.push(getValue);
+
+    }
+
+    console.log(variable);
+    console.log(value);
+    
+</script>
+</body>
+</html>
