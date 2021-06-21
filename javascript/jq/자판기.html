@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    var change = 0;
+    var snack = ["허니버터", "칸쵸", "프링글스"];
+    var money = ["1300" , "1500", "3000"];
+
+    nmc = true;
+
+    $("button").click(function() {
+        if(moneyTxt == false) {
+            nmc = false;
+        }
+    });
+
+
+    $(function() {
+        for(i in snack) {
+            if (snack[i] == snackTxt) {
+                change = moneyTxt - money[i];
+                nmc = false;
+            }
+        });
+
+    $(function() {
+        
+
+
+    
+
+
+        
+</script>
+<body>
+    <p>
+        <input type="text" placeholder="돈을 넣어주세요" name="moneyTxt" id="moneyTxt"/>
+        <button id="button">입력</button>
+    </p>
+    <p class="snackTxt">
+        <button>허니버터(1300원)</button>
+        <button>칸쵸(1500원)</button>
+        <button>프링글스(3000원)</button>
+    </p>
+    <p class="text">출력창(snack + 나왔습니다 + 거스름돈: change + 원 입니다)</p>
+</body>
+</html>
