@@ -14,40 +14,52 @@
 
     nmc = true;
 
-    $("button").click(function() {
-        if(moneyTxt == false) {
-            nmc = false;
-        }
-    });
+    $(".moneyTxt").text(".moneytxt")
 
-
-    $(function() {
-        for(i in snack) {
-            if (snack[i] == snackTxt) {
-                change = moneyTxt - money[i];
-                nmc = false;
+    $("#button").on(function() {
+        var moneyTxtTotal = moneyTxt;
+        $("#btn1").click(function() {
+            for(i in snack) {
+                change = moneyTxtTotal - snack[i];
             }
+        $("#btn2").click(function() {
+            for(i in snack) {
+            change = moneyTxtTotal - snack[i];
+            }
+        $("btn3").click(function() {
+            for(i in snack) {
+            change = moneyTxtTotal - snack[i];
+            }
+            nmc = false;
         });
-
-    $(function() {
+        
+        noMoneyCheck(nmc)
         
 
+    $(function() {
+        if(moneyTxt == "") {
+            alert("돈을 넣어주세요");
+        }
+    }); 
+
+    $(function(nmc) {
+        if(mon)
 
     
-
+// $(".text").text(snack[i] + "나왔습니다","<br />" + "거스름돈: " + change + "원 입니다.");
 
         
 </script>
 <body>
     <p>
-        <input type="text" placeholder="돈을 넣어주세요" name="moneyTxt" id="moneyTxt"/>
+        <input type="text" placeholder="돈을 넣어주세요" name="moneyTxt" class="moneyTxt"/>
         <button id="button">입력</button>
     </p>
     <p class="snackTxt">
-        <button>허니버터(1300원)</button>
-        <button>칸쵸(1500원)</button>
-        <button>프링글스(3000원)</button>
+        <button id="btn1">허니버터(1300원)</button>
+        <button id="btn2">칸쵸(1500원)</button>
+        <button id="btn3">프링글스(3000원)</button>
     </p>
-    <p class="text">출력창(snack + 나왔습니다 + 거스름돈: change + 원 입니다)</p>
+    <p class="text">0</p>
 </body>
 </html>
