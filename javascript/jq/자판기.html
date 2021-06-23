@@ -16,7 +16,7 @@
 
     $(".moneyTxt").text(".moneytxt")
 
-    $("#button").on(function() {
+    $("#button").on("click", function() {
         var moneyTxtTotal = moneyTxt;
         $("#btn1").click(function() {
             for(i in snack) {
@@ -41,9 +41,8 @@
             alert("돈을 넣어주세요");
         }
     }); 
-
-    $(function(nmc) {
-        if(mon)
+});
+        
 
     
 // $(".text").text(snack[i] + "나왔습니다","<br />" + "거스름돈: " + change + "원 입니다.");
