@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.center {
+            text-align: center;
+            color: blue;
+        }
+
+        p.large {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <p id="item" class="center large">This paragraph refers two classes</p>
+    <input type="button" value="Click to remove all classes" onclick="remove_classes()">
+    <script src="../javascript/jq/jquery-3.6.0.min.js"></script>
+    <script>
+        $("input").click(function() {
+            $("#item").removeClass("center large");
+        });
+
+        /* function remove_classes() {
+            $("item").removeClass();
+        } */
+    </script>
+</body>
+</html>
