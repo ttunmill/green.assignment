@@ -8,15 +8,16 @@
 </head>
 <body>
     <ul>
-        <li>Html Tutorial</li>
-        <li>Mongodb Tutorial</li>
-        <li>Python Tutorial</li>
+        <li>Html</li>
+        <li>Mongodb</li>
+        <li>Python</li>
     </ul>
     <script src="../javascript/jq/jquery-3.6.0.min.js"></script>
     <script>
-        $("li").each(function(idx, elem) {
-            $(elem).prepend("" + idx + ": ");
-            });
+        $(document).ready(function() {
+            var i = $("ul li:nth-child(2)").text();
+            console.log(i);
+        });
     </script>
 </body>
 </html>

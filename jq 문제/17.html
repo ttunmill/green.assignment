@@ -7,16 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Html Tutorial</li>
-        <li>Mongodb Tutorial</li>
-        <li>Python Tutorial</li>
-    </ul>
+    <div style="background-color: yellow;">
+    <p>Click the button</p>
+    </div>
+    <button>Click me!</button>
     <script src="../javascript/jq/jquery-3.6.0.min.js"></script>
     <script>
-        $("li").each(function(idx, elem) {
-            $(elem).prepend("" + idx + ": ");
-            });
+        $("button").click(function() {
+            $("div").css("background-color","green");
+        });
     </script>
 </body>
 </html>

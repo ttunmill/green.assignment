@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Html Tutorial</li>
-        <li>Mongodb Tutorial</li>
-        <li>Python Tutorial</li>
-    </ul>
+    <div id="header">
+        <ul>
+            <li><a href="#">python</a></li>
+            <li><a href="#">php</a></li>
+        </ul>
+    </div>
+    <input type="button" value="Click" onclick="new_element()" />
     <script src="../javascript/jq/jquery-3.6.0.min.js"></script>
     <script>
-        $("li").each(function(idx, elem) {
-            $(elem).prepend("" + idx + ": ");
-            });
+        function new_element() {
+            $("#header ul").append("<li>java</li>")
+        };
     </script>
 </body>
 </html>

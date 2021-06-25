@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: red;"></div>
+    <div style="background-color: rgb(16,99,30);"></div>
+    <div style="background-color: #523456;"></div>
+    <div style="background-color: #a11;"></div>
+    <p></p>
+    <script src="../javascript/jq/jquery-3.6.0.min.js"></script>
+    <script>
+        $("div").on("click", function(color) {
+            var i = $("div").css("background-color")
+            $("p").html(i)
+        });
+    </script>
+</body>
+</html>

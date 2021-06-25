@@ -7,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Html Tutorial</li>
-        <li>Mongodb Tutorial</li>
-        <li>Python Tutorial</li>
-    </ul>
+    <p>JQuery Exercises</p>
+    <div style="height: 75px; width: 200px; padding: 10px; margin: 3px; 
+    border: 1px solid blue; background-color: #81DAF5;"></div>
     <script src="../javascript/jq/jquery-3.6.0.min.js"></script>
     <script>
-        $("li").each(function(idx, elem) {
-            $(elem).prepend("" + idx + ": ");
-            });
+            var i = $("p").width();
+            var q = $("div").width();
+
+            console.log(i)
+            console.log(q)
     </script>
 </body>
 </html>
