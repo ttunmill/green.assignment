@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 통합 */
 .header {
     background-color: #ECF0F1;
     font-family: 'Open Sans', sans-serif;
@@ -11,10 +12,45 @@ h1, h2, h3, h4, h5, h6 {
     color: #303030;
 }
 
-.container {
-    margin-top: 50px;
+/* 헤더 */
+
+#img {
+    position: relative;
+    background-image: url("./images/bg.webp");                                                               
+    height: 100vh;
+    background-size: cover;
+    }
+
+    #img #content {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);                                                                   
+        color: white;
+        text-align: center;
+    }
+
+
+/* 3번째 */
+
+img {
+    width: 100%;
+    height: auto;
 }
 
-.section_bg {
-    background-color: #505050;
+h3 {
+    text-align: center;
+    padding: 20px;
 }
+
+#content_bg {
+    background-color: #ECF0F1;
+    width: 100%;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #303030;
+}
+
+/* 푸터 */

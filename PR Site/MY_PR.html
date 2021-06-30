@@ -9,26 +9,45 @@
     <link rel="stylesheet" href="MY.PR.css">
 </head>
 <body>
+    <!-- 내비게이션 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">MY PR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#img">Home</a>
+            <a class="nav-link" href="#section_01">Portflio</a>
+            <a class="nav-link" href="#content_bg">UpLoad</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    
     <!-- 헤더 -->
-    <header class="header">
-        <div class= "py-lg-5">
-            <div class="col-md-6 col-md-6 mx-auto">
-                <h1 class="fw-light">WellCome!</h1>
-                <p class="lead text-muted">자신의 PR사이트 만들어보기</p>
+    <header>
+        <div id="img">
+            <div id="content">
+                <h1 class="text-white">WellCome!</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ab assumenda cumque veritatis ullam illum consequatur officiis aut, tenetur delectus nulla accusantium voluptas sapiente doloremque blanditiis aliquam totam laudantium obcaecati?</p>
             </div>
         </div>
     </header>
+    
 
-    <!-- 이미지들 -->
-    <section class="section_01">
+    <!-- 포트폴리오 -->
+    <section id="section_01">
         <div>
-            <div class="album py-5 bg-light">
+            <h1 class="m-3 p-3 font-monospace">Portflio</h1>
+            <div class="album py-5">
             <div class="container">
         
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                     <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef">미구현</text></svg>
         
                     <div class="card-body">
@@ -45,7 +64,7 @@
                 </div>
                 <div class="col">
                 <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef">미구현</text></svg>
         
                     <div class="card-body">
@@ -62,7 +81,7 @@
                 </div>
                 <div class="col">
                 <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef">미구현</text></svg>
         
                     <div class="card-body">
@@ -81,11 +100,30 @@
     </section>
 
     <!-- 콘텐츠 -->
-    <section class="section_02 bg-dark">
-        
+    <div id="content_bg" class="py-5">
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="images/limelightnetworks-1.jpg" alt="image">
+            </div>
+            <div class="col-md-4">
+                <h3 class="font-monospace">bootstrap</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ipsam libero explicabo, perspiciatis sequi quae illo vitae dolorem ad, aut aliquid neque, hic tempore tenetur quam tempora exercitationem. Totam, dolor.</p>
+                <div class="position-relative p-5">
+                    <button class="btn btn-primary position-absolute bottom-0 end-0" type="submit">Upload</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- 푸터 -->
+    </div>
 
+    <!-- 푸터 -->
+    <footer class="py-1">
+        <div class="jumbotron text-center">
+            <h1 class="text-white p-2">아아ㅏ</h1>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem atque adipisci provident animi dignissimos reiciendis qui voluptas. Facere nisi adipisci, perspiciatis possimus soluta inventore distinctio natus at tenetur pariatur.</p>
+        </div>
+    </footer>
 
 
 

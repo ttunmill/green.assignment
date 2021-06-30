@@ -73,9 +73,6 @@ input:nth-of-type(2):checked ~ .button_01 > label:nth-of-type(2){
     border-top:none;
 }
 
-/*  여기서 막힘 */
-
-
 
 /* Main Menu */
 #main_menu {
